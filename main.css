@@ -1,0 +1,179 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: 'Roboto', sans-serif;}
+
+body{
+    background-color: rgb(255, 255, 246);
+}
+
+.conteiner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(44, 44, 255);
+    color: white;
+    padding-top: 16px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.menu-hamburger{
+    width: 32px;
+    cursor: pointer;
+
+}
+
+.menu-hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+nav{
+    padding: 16px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo img{
+    max-width: 100%;
+}
+
+.sobre{
+    margin: 48px 0;
+}
+
+.sobre .conteudo{
+    display: flex;
+}
+
+.sobre .conteudo img{
+    margin-right: 32px;
+}
+
+.sobre .conteudo div h3{
+    margin-top: 16px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+h2 {
+    padding-bottom: 32px;
+    margin-bottom: 16px;
+    border-bottom: 8px solid rgb(44, 44, 255);
+}
+
+.lista-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+}
+
+.lista-produtos li{
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.lista-produtos li img{
+    max-width: 100%;
+}
+
+.lista-produtos li h3{
+    margin: 16px 0;
+}
+
+.preco{
+    margin: 16px 0;
+    display: block;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(44, 44, 255);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 720px) {
+    .conteiner{
+        max-width: 90%;
+    }
+
+    .sobre{
+        margin: 0;
+    }
+
+    .sobre .conteudo{
+        display: block;
+    }
+
+    .sobre .conteudo img{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .conteudo img{
+        margin-bottom: 8px;
+    }
+
+    .lista-produtos{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+    .conteiner{
+        max-width: 90%;
+    }
+
+    .sobre{
+        margin: 0;
+    }
+
+    .sobre .conteudo img{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .sobre .conteudo{
+        display: block;
+    }
+
+    .lista-produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+    }
+}
